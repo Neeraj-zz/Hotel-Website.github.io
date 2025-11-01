@@ -1,0 +1,99 @@
+.menuu {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 20px;
+}
+
+
+.latestnews-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  width: 200px; /* Adjust based on your needs */
+  height: 200px; /* Adjust based on your needs */
+}
+
+.latestnews {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.latestnews-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.latestnews-overlay i {
+  color: white;
+  font-size: 40px;
+  transition: transform 0.3s ease;
+}
+
+.latestnews-container:hover .latestnews-overlay {
+  opacity: 1;
+}
+
+.latestnews-container:hover .latestnews {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.scroll-containerr {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+ .scrolling-textt {
+      display: inline-flex;
+      animation: scroll-left 30s linear infinite; /* slow scroll */
+    }
+
+.latestnews:hover {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+
+
+}
+
+
+ .menuu {
+      display: flex;
+      align-items: center;
+      padding: 50px 30px;
+      font-size: 60px;
+      font-weight: bold;
+      color: #b5b2ad; 
+      gap: 20px;
+    }
+
+    .menuu div {
+      
+      cursor: pointer;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+ @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }

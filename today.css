@@ -1,0 +1,128 @@
+ .banner {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background: url("images/today/bg/ctaBG1_1.jpg") no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 5%;
+      color: white;
+      overflow: hidden;
+    }
+
+    .content {
+      max-width: 50%;
+      z-index: 2;
+    
+      text-align: center;
+      justify-content: center;
+    }
+
+    .content h4 {
+      color: #ff1744;
+      font-weight: 600px;
+      margin-bottom: 5px;
+      animation: fadeInDown 1s ease forwards;
+      font-size: 15px;
+      align-items: center;
+    }
+
+    .content h1 {
+      font-size: 40px;
+      font-weight: 800px;
+      margin-bottom: 5px;
+      animation: fadeInLeft 1.2s ease forwards;
+    }
+
+    .content p {
+      
+      color: orange;
+      margin-bottom: 20px;
+      animation: fadeInUp 1.4s ease forwards;
+      font-size: 30px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      background: #ff4400;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      cursor: pointer;
+      font-weight: bold;
+  
+      transition: 0.3s;
+      animation: pulse 2s infinite;
+    }
+
+    .btn:hover {
+      background: #e1133d;
+    }
+
+    /* Pizza Image */
+    .pizza {
+      position: absolute;
+      right: 10%;
+      bottom: 10%;
+      width: 450px;
+      z-index: 1;
+      animation: fadeInRight 1.5s ease forwards;
+    }
+
+    /* Floating Elements */
+    .tomato {
+      position: absolute;
+      right: 0%;
+      bottom: 5%;
+      width: 120px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .leaf {
+      position: absolute;
+      top: 10%;
+      left: 0%;
+      width: 80px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .chili {
+      position: absolute;
+      bottom: 5%;
+      left: 0%;
+      width: 80px;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    /* Animations */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }

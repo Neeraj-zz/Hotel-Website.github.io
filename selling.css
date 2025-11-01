@@ -1,0 +1,191 @@
+ .section {
+      position: relative;
+      text-align: center;
+      padding: 60px 20px;
+      margin-top: 80px;
+    }
+
+    .section h5 {
+      color: #ff6600;
+      font-size: 15px;
+      font-weight: 600px;
+      margin: 0;
+      text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin: 5px 0 40px;
+      color: #111;
+      font-weight: 800;
+    }
+
+    .dishes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      justify-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      position: relative;
+      width: 100%;
+      max-width: 200px;
+      height: 300px;
+      text-align: center;
+      transition: all 0.4s ease;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      transition: transform 0.4s ease;
+    }
+
+    /* icons group (hidden by default) */
+    .icons {
+      position: absolute;
+      top: 50%;
+      right: -50px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: right 0.4s ease;
+    }
+
+    .icons div {
+      background: #fff;
+      color: #111;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .icons div:hover {
+      background: #e60023;
+      color: #fff;
+    }
+
+    .card h3 {
+      font-size: 15px;
+      margin: 10px 0 5px;
+      color: #111;
+      font-weight: 700;
+      transition: color 0.4s;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #777;
+      margin: 0 0 10px;
+      transition: color 0.4s;
+    }
+
+    .price {
+      color: #e60023;
+      font-weight: 700;
+      font-size: 18px;
+      transition: color 0.4s;
+    }
+
+    /* Hover Effect */
+    .card:hover {
+      background: #0d0d2b url("https://www.transparenttextures.com/patterns/cartographer.png");
+      background-size: cover;
+      transform: translateY(-8px);
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .card:hover .icons {
+      right: 12px;
+    }
+
+    .card:hover h3,
+    .card:hover p,
+    .card:hover .price {
+      color: #fff;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #e60023;
+      color: #fff;
+      padding: 8px 12px;
+      
+      margin-top: 40px;
+     
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #cc0020;
+    }
+
+    @media (max-width: 768px) {
+      .section h2 {
+        font-size: 26px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section h2 {
+        font-size: 22px;
+      }
+      .card {
+        padding: 15px;
+      }
+      .card img {
+        width: 100px;
+        height: 100px;
+      }
+
+    }
+   .decor {
+ position: absolute;
+ z-index: 0; /* keeps them behind content but visible */
+ pointer-events: none; /* so clicks don't affect them */
+}
+
+.decor-top-right {
+  top: 0;
+  right: 0;
+  max-width: 180px;
+}
+
+.decor-bottom-left {
+  bottom: 0;
+  left: 0;
+  max-width: 200px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .decor-top-right {
+    max-width: 120px;
+  }
+  .decor-bottom-left {
+    max-width: 140px;
+  }
+}

@@ -1,0 +1,133 @@
+.container {
+      display: flex;
+      justify-content: space-between;
+      background: url("images/timer/timerBg.png") no-repeat center center/cover;
+      align-items: center;
+      padding: 40px 60px;
+      height: 500px;
+      overflow: hidden;
+      margin-bottom: 80px;
+      position: relative;
+    }
+
+    /* Timer decoration images */
+    .timer-decoration {
+      position: absolute;
+      z-index: 1;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .timer-decoration.top-left {
+      top: 20px;
+      left: 0px;
+      width: 100px;
+      height: auto;
+    }
+
+    .timer-decoration.bottom-left {
+      bottom: 0px;
+      right: -5px;
+      width: 100px;
+      height: 150px;
+      transform: rotate(15deg);
+      animation-delay: 0.5s;
+    }
+
+    /* Burger Section */
+    .burger {
+      background: #ff6600;
+      padding: 30px 50px;
+      border-radius: 250px 250px 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+      margin-left: 140px;
+      
+      
+    }
+
+    .burger img {
+      max-width: 400px;
+      height: 500px;
+      display: block;
+      bottom: 0px;
+     
+     
+    }
+
+    /* Offer Section */
+    .offer-box {
+      background: #2b2929;
+      padding: 50px;
+      margin-right: 100px;
+      
+      text-align: center;
+      max-width: 400px;
+      height: 400px;
+    }
+
+    .offer-box h4 {
+      color: #ff6600;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .offer-box h2 {
+      margin: 10px 0 25px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .timer {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      
+    }
+
+    .time-box {
+      background: #ff6600;
+      color: white;
+      padding: 18px;
+      
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      width: 75px;
+    }
+
+    .time-box span {
+      display: block;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #e60023;
+      color: white;
+      padding: 14px 20px;
+      
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #b3001b;
+    }
+
+    /* Floating animation */
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }

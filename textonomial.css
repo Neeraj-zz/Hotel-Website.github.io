@@ -1,0 +1,129 @@
+ .testimonial-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      position: relative;
+      overflow: hidden;
+     
+      background-color: black;
+      margin-top: 40px;
+      
+    }
+
+    /* Left image (chef) */
+    .testimonial-left {
+      flex: 1;
+      position: relative;
+    }
+    .testimonial-left img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Center content */
+    .testimonial-center {
+      flex: 1;
+      text-align: center;
+      padding: 0 50px;
+    }
+    .testimonial-center h5 {
+      color: #ff6a00;
+      font-size: 14px;
+     
+    }
+    .testimonial-center h2 {
+      font-size: 32px;
+      font-weight:800px;
+      line-height: 1.2;
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    /* Testimonial Card */
+    .testimonial-card {
+      background: #fff;
+      color: #333;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: left;
+      max-width: 420px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .testimonial-card img.profile {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      float: left;
+      margin-right: 15px;
+    }
+    .testimonial-card h4 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .testimonial-card span {
+      font-size: 14px;
+      color: gray;
+    }
+    .testimonial-card .stars {
+      margin: 10px 0;
+    }
+    .testimonial-card .stars img {
+      width: 70px;
+    }
+    .testimonial-card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+      margin-top: 15px;
+    }
+    .testimonial-card .quote {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 30px;
+    }
+
+    /* Navigation Arrows */
+    .testimonial-nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 15px;
+    }
+    .testimonial-nav button {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: none;
+      background: #ff1d25;
+      cursor: pointer;
+    }
+    .testimonial-nav img {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Right decoration */
+    .testimonial-right {
+      flex: 0.6;
+      text-align: right;
+    }
+    .testimonial-right img {
+      max-width: 100%;
+    }
+
+
+
+
+    /* scroll */
+
+        .scroll-containers {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      background-color: black;
+    }

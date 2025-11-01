@@ -1,0 +1,81 @@
+/* Contact Info Section */
+.contact-info-section {
+  
+  background-color: #ff6a00;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.contact-card {
+  flex: 1;
+  min-width: 300px;
+ 
+  border-radius: 10px;
+  padding: 30px;
+  
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  width: 70px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.contact-icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.contact-details h3 {
+  font-size: 18px;
+  color:white;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.contact-details p {
+  color:white;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .contact-card {
+    min-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    min-width: 100%;
+  }
+  
+  .contact-info-section {
+    padding: 50px 0;
+  }
+}
